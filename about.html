@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
   </head>
   <body>
     <header>
 </script>
       <a href="index.html" id="logo">
-        <h1>Emanuels Fresh Grill</h1>
-        <h2>Fiesta Style</h2>
+        <h1><img src="img/bwlogo.gif"></h1>
       </a>
       <nav>
         <ul>
@@ -25,15 +26,26 @@
         </ul>
       </nav>
     </header>
-    <div id="containter" id="wrapper">
-      <div class="banner">
-        <img src="img/starters.jpg" alt="">
-        <img src="img/platters.jpg" alt="">
-        <img src="img/tacos.jpg" alt="">
-        <img src="img/burritos.jpg" alt="">
+      <div id="wowslider-container1">
+      <div class="ws_images">
+       <ul>
+        <li><img src="data1/images/burritos.jpg" alt="burritos" title="burritos" id="1_0"/></li>
+        <li><img src="data1/images/platters.jpg" alt="platters" title="platters" id="1_1"/></li>
+        <li><img src="data1/images/starters.jpg" alt="slider" title="starters" id="1_2"/></a></li>
+        <li><img src="data1/images/tacos.jpg" alt="tacos" title="tacos" id="1_3"/></li>
+       </ul>
+      </div>
+      <div class="ws_bullets"><div>
+        <a href="#" title="burritos"><span><img src="data1/tooltips/burritos.jpg" alt="burritos"/>1</span></a>
+        <a href="#" title="platters"><span><img src="data1/tooltips/platters.jpg" alt="platters"/>2</span></a>
+        <a href="#" title="starters"><span><img src="data1/tooltips/starters.jpg" alt="starters"/>3</span></a>
+        <a href="#" title="tacos"><span><img src="data1/tooltips/tacos.jpg" alt="tacos"/>4</span></a>
       </div>
       </div>
-      <footer>
+
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+      <footer id="foot">
         <a href="https://www.facebook.com/Emanuels-Fresh-Grill-453005888053197/"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon"></a>
         <p>&copy; 2015 Emanuels Fresh Grill</p>
       </footer>
