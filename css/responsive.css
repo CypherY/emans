@@ -39,6 +39,10 @@
   
 }
 
+nav a.selected, nav a:hover {
+  color: #000;
+}
+
 @media screen and (min-width: 660px) {
 
   /**********************************
@@ -71,9 +75,13 @@
   }
   
   header {
-    border-bottom: 5px solid #599a68;
+    border-bottom: 5px solid #880000;
     margin-bottom: 60px;
   }
+
+nav a.selected, nav a:hover {
+  color: #880000;
+}
 
   
 }
