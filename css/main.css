@@ -4,14 +4,23 @@ GENERAL
 
 body {
   font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  margin: auto;
 }
 
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+#Jay {
+  display: block;
+  text-align: center;
+}
 
 a {
-  text-decoration: none;
+  color: inherit;
 }
-
 img {
   max-width: 100%;
 }
@@ -20,7 +29,31 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+#bar {
+  padding: 5em;
+  margin-left: 9em;
+  margin-right: 2em;
+  background-color: #ccc;
+  text-align: right;
+  border-top-left: 20em; 
+}
 
+#cat {
+  padding-left: 5em;
+  padding-bottom: 10em;
+  margin-left: 15em;
+  margin-right: 2em;
+  background-color: #ccc;
+  text-align: right;
+}
+#caty {
+  padding-right: 4em;
+  padding-bottom: 15em;
+  margin-left: 3em;
+  margin-right: 450px;
+  background-color: #880000; 
+  margin-bottom: -20em
+}
 /**********************************
 HEADING
 ***********************************/
@@ -38,7 +71,7 @@ header {
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
@@ -46,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
   font-size: 1.2em;
   margin: -5px 0 0;
   font-weight: normal;
@@ -91,14 +124,14 @@ footer {
   text-align: center;
   clear: both;
   padding-top: 50px;
-  color: #ccc;
+  color: #fff;
   width: 100%;
   margin: 0 auto;
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   margin: 0 5px;
 }
 
@@ -107,12 +140,6 @@ footer {
 PAGE: ABOUT
 ***********************************/
 
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-}
 
 
 
@@ -144,9 +171,12 @@ PAGE: CONTACT
   background-image: url('../img/mail.png');
 }
 
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
-}
+
+
+/**********************************
+PAGE: CATERING
+***********************************/
+
 
 
 
@@ -156,40 +186,71 @@ COLORS
 
 /* site body */
 body {
-  background-color: #fff;
-  color: #999;
+  color: #fff;
 }
 
-/* green header */
+/* red header */
 header {
   background: #000;
-  border-color: #880000;
 }
 
 /* nav background on mobile */
 nav {
-  background: #880000;
+  background: #000;
 }
 
-footer {
-background-color: #000;
-width: 100%;
-margin: 0 auto;
+.primary-content col  { background-color: #476b6b;
+                     border-bottom: solid red;
+                     color: #000; }
+.secondary-content col { background-color: #fff;
+                     color: #000; }
+
+.col {
+        display: inline-block;
+        padding: 15px;
+        margin-left: -5px;
+        vertical-align: top;
+        border: 5px;
+     }
+
+.primary-content,
+.secondary-content {
+  display: inline-block;
 }
+
+.secondary-content {
+                     margin-right: 5px;
+                     width: 40%;
+                   }
+
+.primary-content {
+                   width: 60%;
+                 }
+
+footer {
+        background-color: #000;
+        width: 100%;
+        margin: 0 auto;
+       }
 
 
 /* nav link */
 nav a, nav a:visited {
-  color: #fff;
-}
+                       color: #fff;
+                    }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #880000;
+  color: #FF2121;
 }
-
-
-
+@media (max-width: 768px) {
+.col {
+       display: block;
+       width: initial;
+       height: initial;
+     margin: initial;
+  }
+}
 
 
 
